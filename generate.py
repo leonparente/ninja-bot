@@ -13,8 +13,8 @@ def is_boolean_feature(value):
 def generate_domain(dictionary):
     with open(os.path.dirname(os.path.abspath(__file__))+"/domain.yml", "w") as file:
         file.write("session_config:\n")
-        file.write("session_expiration_time: 60.0\n")
-        file.write("carry_over_slots_to_new_session: true\n")
+        file.write("  session_expiration_time: 60.0\n")
+        file.write("  carry_over_slots_to_new_session: true\n")
         file.write("intents:\n")
         for key,value in dictionary.items():
             file.write("- perguntar_"+unidecode(key.lower()).replace(" ", "_")+"\n")
@@ -24,11 +24,11 @@ def generate_domain(dictionary):
             file.write("- "+unidecode(key.lower()).replace(" ", "_")+"\n")
         
         file.write("responses:\n")
-        file.write("  utter_fallback\n")
+        file.write("  utter_fallback:\n")
         file.write("  - text: \"Desculpe, Você pode perguntar de novo de outro jeito?\"\n")
         for key,value in dictionary.items():
             decode_key = unidecode(key.lower()).replace(" ", "_")
-            file.write("  utter_"+decode_key+"\n")
+            file.write("  utter_"+decode_key+":\n")
             if is_boolean_feature(value):
                 if unidecode(value.lower()) == "sim":
                     file.write("  - text: \"Olá. Tudo bem? O produto possui "+key+".\"\n")
