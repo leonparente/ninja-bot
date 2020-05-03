@@ -1,0 +1,153 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- perguntar_quantidade
+- perguntar_entrega
+- perguntar_marca
+- perguntar_modelo
+- perguntar_capacidade_em_volume
+- perguntar_materiais
+- perguntar_termometro
+- perguntar_controle_de_temperatura
+- perguntar_desligamento_automatico
+- perguntar_indicador_de_agua
+- perguntar_filtro
+- perguntar_infusor
+- perguntar_display_digital
+- perguntar_voltagem
+- perguntar_dimensoes_do_pacote
+- perguntar_dimensoes_do_produto
+- perguntar_peso_do_envio
+- perguntar_registro_no_inmetro
+- perguntar_garantia
+
+entities:
+- quantidade
+- entrega
+- marca
+- modelo
+- capacidade_em_volume
+- materiais
+- termometro
+- controle_de_temperatura
+- desligamento_automatico
+- indicador_de_agua
+- filtro
+- infusor
+- display_digital
+- voltagem
+- dimensoes_do_pacote
+- dimensoes_do_produto
+- peso_do_envio
+- registro_no_inmetro
+- garantia
+
+responses:
+  utter_fallback:
+  - text: "Desculpe, Você pode perguntar de novo de outro jeito?\n"
+  utter_entrega:
+  - text: "Entrega sim\n"
+  utter_quantidade:
+  - text: "Olá. Tudo bem? Temos X unidades ainda.\n"
+  - text: "Oi. Tudo bem? Temos X unidades ainda.\n"
+  - text: "Olá. Temos X unidades ainda.\n"
+  - text: "Oi. Temos X unidades ainda.\n"
+  utter_marca:
+  - text: "Olá. Tudo bem? Marca do produto é X.\n"
+  - text: "Oi. Tudo bem? Marca do produto é X.\n"
+  - text: "Olá. Marca do produto é X.\n"
+  - text: "Oi. Marca do produto é X.\n"
+  utter_modelo:
+  - text: "Olá. Tudo bem? Modelo do produto é X.\n"
+  - text: "Oi. Tudo bem? Modelo do produto é X.\n"
+  - text: "Olá. Marca do produto é X.\n"
+  - text: "Oi. Marca do produto é X.\n"
+  utter_capacidade_em_volume:
+  - text: "Olá. Tudo bem? Capacidade em volume do produto é X.\n"
+  - text: "Oi. Tudo bem? Capacidade em volume do produto é X.\n"
+  - text: "Olá. Capacidade em volume do produto é X.\n"
+  - text: "Oi. Capacidade em volume do produto é X.\n"
+  utter_materiais:
+  - text: "Olá. Tudo bem? Materiais do produto são X e X.\n"
+  - text: "Oi. Tudo bem? Materiais do produto são X e X.\n"
+  - text: "Olá. Materiais do produto são X e X.\n"
+  - text: "Oi. Materiais do produto são X e X.\n"
+  utter_termometro:
+  - text: "Olá. Tudo bem? O produto não possui termometro.\n"
+  - text: "Oi. Tudo bem? O produto não possui termometro.\n"
+  - text: "Olá. O produto não possui termometro.\n"
+  - text: "Oi. O produto não possui termometro.\n"
+ 
+  utter_controle_de_temperatura:
+  - text: "Olá. Tudo bem? O produto não possui controle de temperatura.\n"
+  - text: "Oi. Tudo bem? O produto não possui controle de temperatura.\n"
+  - text: "Olá. O produto não possui controle de temperatura.\n"
+  - text: "Oi. O produto não possui controle de temperatura.\n"
+  - text: "Olá. Não.\n"
+  - text: "Oi. Não.\n"
+  utter_desligamento_automatico:
+  - text: "Olá. Tudo bem? O produto possui desligamento automatico.\n"
+  - text: "Oi. Tudo bem? O produto  possui desligamento automatico.\n"
+  - text: "Olá. O produto possui desligamento automatico.\n"
+  - text: "Oi. O produto possui desligamento automatico.\n"
+  - text: "Olá. Sim!\n"
+  - text: "Oi. Sim!\n"
+  utter_indicador_de_agua:
+  - text: "Olá. Tudo bem? O produto possui indicador de agua.\n"
+  - text: "Oi. Tudo bem? O produto  possui indicador de agua.\n"
+  - text: "Olá. O produto possui indicador de agua.\n"
+  - text: "Oi. O produto possui indicador de agua.\n"
+  - text: "Olá. Sim!\n"
+  - text: "Oi. Sim!\n"
+  utter_filtro:
+  - text: "Olá. Tudo bem? O produto possui filtro.\n"
+  - text: "Oi. Tudo bem? O produto  possui filtro.\n"
+  - text: "Olá. O produto possui filtro.\n"
+  - text: "Oi. O produto possui filtro.\n"
+  - text: "Olá. Sim!\n"
+  - text: "Oi. Sim!\n"
+  utter_infusor:
+  - text: "Olá. Tudo bem? O produto não possui infusor.\n"
+  - text: "Oi. Tudo bem? O produto não possui infusor.\n"
+  - text: "Olá. O produto não possui infusor.\n"
+  - text: "Oi. O produto não possui infusor.\n"
+  - text: "Olá. Não.\n"
+  - text: "Oi. Não.\n"
+  utter_display_digital:
+  - text: "Olá. Tudo bem? O produto não possui display digital.\n"
+  - text: "Oi. Tudo bem? O produto não possui display digital.\n"
+  - text: "Olá. O produto não possui display digital.\n"
+  - text: "Oi. O produto não possui display digital.\n"
+  - text: "Olá. Não.\n"
+  - text: "Oi. Não.\n"
+  utter_voltagem:
+  - text: "Olá. Tudo bem? Voltagem do produto é X.\n"
+  - text: "Oi. Tudo bem? Voltagem do produto é X.\n"
+  - text: "Olá. Voltagem do produto é X.\n"
+  - text: "Oi. MarVoltagemca do produto é X.\n"
+  utter_dimensoes_do_pacote:
+  - text: "Olá. Tudo bem? Dimensoes do pacote do produto é X.\n"
+  - text: "Oi. Tudo bem? Dimensoes do pacote do produto é X.\n"
+  - text: "Olá. Dimensoes do pacote do produto é X.\n"
+  - text: "Oi. Dimensoes do pacote do produto é X.\n"
+  utter_dimensoes_do_produto:
+  - text: "Olá. Tudo bem? Dimensoes do produto do produto é X.\n"
+  - text: "Oi. Tudo bem? Dimensoes do produto do produto é X.\n"
+  - text: "Olá. Dimensoes do produto do produto é X.\n"
+  - text: "Oi. Dimensoes do produto do produto é X.\n"
+  utter_peso_do_envio:
+  - text: "Olá. Tudo bem? Peso de envio do produto é X.\n"
+  - text: "Oi. Tudo bem? Peso de envio do produto é X.\n"
+  - text: "Olá. Peso de envio do produto é X.\n"
+  - text: "Oi. Peso de envio do produto é X.\n"
+  utter_registro_no_inmetro:
+  - text: "Olá. Tudo bem? Registro no inmetro do produto é X.\n"
+  - text: "Oi. Tudo bem? Registro no inmetro do produto é X.\n"
+  - text: "Olá. Registro no inmetro do produto é X.\n"
+  - text: "Oi. Registro no inmetro do produto é X.\n"
+  utter_garantia:
+  - text: "Olá. Tudo bem? Garantia do produto é X.\n"
+  - text: "Oi. Tudo bem? Garantia do produto é X.\n"
+  - text: "Olá. Garantia do produto é X.\n"
+  - text: "Oi. Garantia do produto é X.\n"
