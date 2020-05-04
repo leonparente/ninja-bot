@@ -2,34 +2,20 @@ session_config:
   session_expiration_time: 60.0
   carry_over_slots_to_new_session: true
 intents:
-- perguntar_quantidade
 - perguntar_marca
-- perguntar_modelo
-- perguntar_dimensoes_do_prod
+- perguntar_quantidade
 entities:
-- quantidade
 - marca
-- modelo
-- dimensoes_do_prod
+- quantidade
 responses:
   utter_fallback:
   - text: "Desculpe, Você pode perguntar de novo de outro jeito?"
+  utter_marca:
+  - text: "Olá. Tudo bem? marca do produto é sapato."
+  - text: "Oi. Tudo bem? marca do produto é sapato."
+  - text: "Olá! marca do produto é sapato."
+  - text: "Oi! marca do produto é sapato."
   utter_quantidade:
   - text: "Olá. Tudo bem? Temos 20 unidades ainda."
   - text: "Oi. Tudo bem? Temos 20 unidades ainda."
   - text: "Olá! Temos 20 unidades ainda."
-  utter_marca:
-  - text: "Olá. Tudo bem? marca do produto é minha marca."
-  - text: "Oi. Tudo bem? marca do produto é minha marca."
-  - text: "Olá! marca do produto é minha marca."
-  - text: "Oi! marca do produto é minha marca."
-  utter_modelo:
-  - text: "Olá. Tudo bem? modelo do produto é meu modelo."
-  - text: "Oi. Tudo bem? modelo do produto é meu modelo."
-  - text: "Olá! modelo do produto é meu modelo."
-  - text: "Oi! modelo do produto é meu modelo."
-  utter_dimensoes_do_prod:
-  - text: "Olá. Tudo bem? Dimensoes do prod do produto é 30x40x30."
-  - text: "Oi. Tudo bem? Dimensoes do prod do produto é 30x40x30."
-  - text: "Olá! Dimensoes do prod do produto é 30x40x30."
-  - text: "Oi! Dimensoes do prod do produto é 30x40x30."
