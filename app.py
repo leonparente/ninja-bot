@@ -28,7 +28,7 @@ def generate_domain(dictionary):
         
         file.write("responses:\n")
         file.write("  utter_fallback:\n")
-        file.write("  - text: \"Desculpe, Você pode perguntar de novo de outro jeito?\"\n")
+        file.write("  - text: \"Desculpe! não sei a resposta para a sua pergunta, irei perguntar ao vendedor.\"\n")
         for key,value in dictionary.items():
             decode_key = unidecode(key.lower()).replace(" ", "_")
             file.write("  utter_"+decode_key+":\n")
