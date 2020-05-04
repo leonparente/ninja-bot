@@ -16,7 +16,7 @@ O NinjaBot Server depende do python 3 para funcionar e algumas dependêcias. Pri
 ```bash
 sudo apt install python3-dev python3-pip
 ```
-O mais recommentado é que você utilize um ambiente virtual python para evitar instalar os pacotes globalmente e garantir um ambiente isolado. Entao crie o ambiente virtual e ative-o:
+O mais recommentado é que você utilize um ambiente virtual python para evitar instalar os pacotes globalmente e garantir um ambiente isolado. Então, crie o ambiente virtual e ative-o:
 ```bash
 python3 -m venv ./venv
 source ./venv/bin/activate
