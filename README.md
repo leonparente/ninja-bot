@@ -48,7 +48,7 @@ O servidor gerará a rota 'http://localhost:5000/question' para a qual deve-se e
     "marca":"Eletrolux",
     "quatidade":10,
     "Freezer":"Sim",
-    "Frost-free":"Não",
+    "Frostfree":"Não",
     "Dimensões":"200x120x70"
   }
 }
@@ -57,6 +57,13 @@ O servidor gerará a rota 'http://localhost:5000/question' para a qual deve-se e
 OBS: nesse servidor de demonstração, caso o BOT nao saiba a resposta, ele responderá "Desculpe! não sei a resposta para a sua pergunta, irei perguntar ao vendedor". Esse é o trigger para enviar a pergunta ao vendedor.
 
 ## Testando via shell
+Caso não queria testar via API REST, o teste pode ser feito utilizando um arquivo JSON da seguinte maneira:
+```bash
+python3 generate.py {seu_arquivo_json}.json
+rasa train
+rasa shell
+```
+Você terá acesso ao terminal shell do rasa e poderá enviar as perguntas que quiser para o seu modelo treinado. Para sair do terminal basta enviar '/stop'
 
 
 
