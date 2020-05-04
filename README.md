@@ -1,5 +1,5 @@
 # ninja-bot
-Esse é o protótipo gerado para o desafio da Olist no MegaHack.
+Esse é o protótipo gerado para o desafio da Olist no MegaHack 2ª Edição: https://www.megahack.com.br/.
 
 ## Plataformas testadas
   - Ubuntu 18.04
@@ -7,12 +7,12 @@ Esse é o protótipo gerado para o desafio da Olist no MegaHack.
 
 ## Setup
 
-Primeiramente você deve clonar o repositorio git do ninja-bot e acessa-lo
+Primeiramente, você deve clonar o repositório git do ninja-bot e acessá-lo
 ```bash
 git clone https://github.com/leonparente/ninja-bot.git
 cd ninja-bot
 ```
-O NinjaBot Server depende do python 3 para funcionar e algumas dependecias. Primeiramente, garanta que seu ambiente possua o python3 executando os comandos:
+O NinjaBot Server depende do python 3 para funcionar e algumas dependêcias. Primeiramente, garanta que seu ambiente possua o python3 executando o comando:
 ```bash
 sudo apt install python3-dev python3-pip
 ```
@@ -21,7 +21,6 @@ O mais recommentado é que você utilize um ambiente virtual python para evitar 
 python3 -m venv ./venv
 source ./venv/bin/activate
 ```
-
 Agora deve instalar as dependências do ninja bot nesse ambiente virtual:
 ```bash
 pip install -U pip
@@ -63,8 +62,4 @@ python3 generate.py {seu_arquivo_json}.json
 rasa train
 rasa shell
 ```
-Você terá acesso ao terminal shell do rasa e poderá enviar as perguntas que quiser para o seu modelo treinado. Para sair do terminal basta enviar '/stop'
-
-
-
-
+Você terá acesso ao terminal shell do rasa e poderá enviar as perguntas que quiser para o seu modelo treinado. Para sair do terminal basta enviar '/stop'.
