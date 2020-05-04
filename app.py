@@ -114,7 +114,7 @@ def question():
     subprocess.call(["rasa", "train"])
     process = subprocess.Popen(["rasa", "run","--enable-api"],stdout=subprocess.PIPE)
     try:
-        process.wait(30)
+        process.wait(35)
     except subprocess.TimeoutExpired:
         pass
     data = json.dumps({"sender": "Rasa", "message": pergunta})
