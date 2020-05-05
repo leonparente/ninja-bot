@@ -8,10 +8,10 @@ Solução desenvolvida pela Ninja Bit, visando suprir as falhas dos bots convenc
 O Ninja Bot se difere dos demais chatbot, principalmente pelo fato de ser um bot transparente gerando a sensação ao cliente de estar falando com um atendente humano e não com um robô. Para os vendedores, o Ninja Bot envia a pergunta para o Facebook Messenger, facilitando e agilizando a leitura das perguntas e as respostas para os clientes.
 
 ### Por que o Ninja Bot utiliza o Rasa?
-**Mais rápido para testes:** pode ser executado localmente - não são necessárias solicitações de HTTP nem ida e volta ao servidor.
-**Personalizável:**  permite ajuste de modelos para obter maior precisão com seu conjunto de dados.
-**Código aberto:** sem risco de bloqueio de fornecedor - o Rasa está sob a licença Apache 2.0, sendo assim, pode ser usado em projetos comerciais.
-**Não depende de provedor específico:** pode ser executado em qualquer provedor de nuvem ou em servidor próprio.
+**Mais rápido para testes:** pode ser executado localmente - não são necessárias solicitações de HTTP nem ida e volta ao servidor.\
+**Personalizável:**  permite ajuste de modelos para obter maior precisão com seu conjunto de dados.\
+**Código aberto:** sem risco de bloqueio de fornecedor - o Rasa está sob a licença Apache 2.0, sendo assim, pode ser usado em projetos comerciais.\
+**Não depende de provedor específico:** pode ser executado em qualquer provedor de nuvem ou em servidor próprio.\
 
 ## Plataformas testadas
   - Ubuntu 18.04
